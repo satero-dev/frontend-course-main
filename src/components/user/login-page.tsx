@@ -19,7 +19,7 @@ export const LoginPage: FC = () => {
         alignItems: "center",
       }}
     >
-      <img className="landing-logo" alt="ifcjs logo" src="ifcjs-logo.png" />
+      <img className="landing-logo" alt="pt logo" src="pt-logo-landing.png" />
 
       <Button variant="outlined" onClick={onLoginClick}>
         Click here to log in.
