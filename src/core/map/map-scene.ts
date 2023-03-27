@@ -17,6 +17,8 @@ export class MapScene {
   private database = new MapDatabase();
   private events: Events;
 
+
+
   constructor(container: HTMLDivElement, events: Events) {
     this.events = events;
     const config = this.getConfig(container);
@@ -132,14 +134,14 @@ export class MapScene {
   }
 
   private getConfig(container: HTMLDivElement) {
-    const center = [7.730277288470006, 63.110047455818375] as [number, number];
+    const center = [2.112, 41.556] as [number, number];
     this.center = { lng: center[0], lat: center[1] };
     return {
       container,
       accessToken: "pk.eyJ1Ijoic2F0ZXJvIiwiYSI6ImNsZXk5Zzl5YjJpdG8zenAxOHp3bmJ1c2oifQ.f_vSjnzZ4IzwP1HjGWOemQ",
-      zoom: 15.35,
-      pitch: 60,
-      bearing: -40,
+      zoom: 17,
+      pitch: 50,
+      bearing: -10,
       center,
       buildings: [],
     };
